@@ -8,26 +8,29 @@
         body {
             background: url("images/background.png");
         }
-        a {
+        #shell a {
             color: white;
         }
         img {
             margin-left: 50px;
             margin-top: 50px;
+            position: absolute;
+            top: 400px;
+            width: 200px;
         }
         #shell {
             background-color: #000080;
-            height: 400px;
-            width: 500px;
-            border: 10px solid #94CEF7;
+            border: 10px solid #94cef7;
             color: white;
             font-family: monospace;
             font-weight: bold;
+            height: 400px;
+            left: 200px;
             overflow-y: scroll;
+            padding: 10px;
             position: absolute;
             top: 150px;
-            left: 400px;
-            padding: 10px;
+            width: 600px;
         }
         #shell ul {
             list-style-type: none;
@@ -36,14 +39,26 @@
         #shell li:before {
             content: '> ';
         }
+        h1, h2, h1 a, h2 a {
+            color: #B2E3FB;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 10px 50px;
+        }
+        h2 {
+            margin-left: 50px;
+        }
     </style>
 </head>
 <body>
-    <img src="images/Its_Done.png">
+    <h1>Eine alternative Leseerfahrung</h1>
+    <h2>Die erste <a href="http://www.dembelo.de" target="_blank">Dembelo</a>-Instanz</h2>
     <div id="shell">
         <ul>
             <li>29.12.2015 - Konzeptwechsel zu "it's done when it's done" - <a target="_blank" href="http://www.dembelo.de/2015/12/29/its-done-when-its-done/">www.dembelo.de</a></li>
         </ul>
     </div>
+    <img src="images/Its_Done.png">
 </body>
 </html>
